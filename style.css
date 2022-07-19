@@ -1,0 +1,25 @@
+body{
+    background-color:aliceblue;
+}
+
+span{
+    
+    display: flex;
+    align-items: center;
+    
+} 
+
+img{
+ /* width: 300px;
+ height: 300px; */
+}
+
+table, th, td{
+    border: 1px solid;
+    color: green;
+}
+
+h2{
+    text-align: center;
+    color: yellow;
+}
