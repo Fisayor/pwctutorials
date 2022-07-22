@@ -1,5 +1,8 @@
 <html>
     <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>PWC Website</title>
         <link rel="stylesheet" href="style.css">
     </head>
@@ -13,23 +16,24 @@
         <a href="aboutus.html">About Us</a>
 
 
-        <form>
+        <section class="container">
+        <form id="form">
         
         <div>
         <h3>Application Form</h3>
         <div>
         <label>FirstName:</label>
-        <input type="text" placeholder="firstname">
+        <input type="text" placeholder="firstname" id="firstname">
         </div>
         
         <div>
         <label>SecondName:</label>
-        <input type="text" placeholder="secondname">
+        <input type="text" placeholder="secondname" id="secondname">
         </div>
 
         <div>
         <label>Age:</label>
-        <input type="number" placeholder="age">
+        <input type="number" placeholder="age" class="age">
         </div>
 
         <div>
@@ -40,32 +44,40 @@
 
         <div>
         <label>State:</label>
-        <select state="state">
-            <option value="">Abia</option>
-            <option value="">Adamawa</option>
-            <option value="">Akwa Ibom</option>
-            <option value="">Anambra</option>
-            <option value="">Bauchi</option>
-            <option value="">Bayelsa</option>
-            <option value="">Benue</option>
-            <option value="">Borno</option>
-            <option value="">Cross River</option>
-            <option value="">Delta</option>
+        <select state="state" id="state">
+            <option value="Abia">Abia</option>
+            <option value="Adamawa">Adamawa</option>
+            <option value="Akwa Ibom">Akwa Ibom</option>
+            <option value="Anambra">Anambra</option>
+            <option value="Bauchi">Bauchi</option>
+            <option value="Bayelsa">Bayelsa</option>
+            <option value="Benue">Benue</option>
+            <option value="Borno">Borno</option>
+            <option value="Cross River">Cross River</option>
+            <option value="Delta">Delta</option>
         </select>
         </div>
 
         <div>
         <label>Selected Courses:</label>
-        <input type="checkbox"><a>DataScience</a>
-        <input type="checkbox"><a>FullStack</a>
-        <input type="checkbox"><a>Agile</a>
-        <input type="checkbox"><a>Internet Of Things</a>
+        <input type="checkbox"><a>DataScience</a><br>
+        <input type="checkbox"><a>FullStack</a><br>
+        <input type="checkbox"><a>Agile</a><br>
+        <input type="checkbox"><a>Internet Of Things</a><br>
         <input type="checkbox"><a>Artificial Intelligence</a>
         </div>
         </div>
-        </form>
-
-        <button>Submit</button>
         
+        <!-- <input class="btn" type="submit" value="Submit"> -->
+        <button class="btn" type="submit" >Submit</button>
+    </form>
+    
+    <div class="msg"></div>
+    <ul id="users"></ul>
+
+        
+    </section>
+
+        <script src="main.js"></script>
     </body>
 </html>
